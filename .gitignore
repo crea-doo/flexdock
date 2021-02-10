@@ -22,6 +22,9 @@
 # maven generated files #
 #########################
 /target
+dependency-reduced-pom.xml
+release.properties
+pom.xml.releaseBackup
 
 ############################
 # launch4j generated files #
