@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.flexdock</groupId>
+	<groupId>at.crea-doo.flexdock</groupId>
 	<artifactId>flexdock</artifactId>
 	<version>1.3</version>
 	<packaging>pom</packaging>
@@ -45,13 +45,30 @@
 		<maven.api.version>3.6.3</maven.api.version>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>net.sf.squirrel-sql.thirdparty-non-maven</groupId>
-			<artifactId>skinlf</artifactId>
-			<version>6.7</version>
-		</dependency>
-	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>at.crea-doo.flexdock</groupId>
+				<artifactId>flexdock-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.crea-doo.flexdock</groupId>
+				<artifactId>flexdock-view</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.crea-doo.flexdock</groupId>
+				<artifactId>flexdock-perspective</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.crea-doo.flexdock</groupId>
+				<artifactId>flexdock-drag</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<pluginManagement>
