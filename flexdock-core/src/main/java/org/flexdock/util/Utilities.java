@@ -621,8 +621,7 @@ public class Utilities {
      * @see Field#get(java.lang.Object)
      * @see IllegalAccessException#getCause()
      */
-    public static Object getValue(Object obj, String fieldName)
-    throws IllegalAccessException {
+    public static Object getValue(Object obj, String fieldName) throws IllegalAccessException {
         if (obj == null || fieldName == null) {
             return null;
         }

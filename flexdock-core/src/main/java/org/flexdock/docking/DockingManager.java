@@ -1441,8 +1441,7 @@ public class DockingManager implements DockingConstants {
      * @see #setLayoutManager(LayoutManager)
      * @see LayoutManager#restore(boolean)
      */
-    public static boolean restoreLayout(boolean loadFromStorage)
-    throws IOException, PersistenceException {
+    public static boolean restoreLayout(boolean loadFromStorage) throws IOException, PersistenceException {
         LayoutManager mgr = getLayoutManager();
         return mgr == null ? false : mgr.restore(loadFromStorage);
     }
