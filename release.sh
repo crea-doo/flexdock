@@ -9,8 +9,7 @@ SELF=$SD/$SCRIPT
 
 cd $SD/
 
-export MAVEN_OPTS="-Xmx2048m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
-mvnw release:clean release:prepare -Pcommon-parent-release $@
-mvnw release:perform -Pcommon-parent-release $@
+mvnw release:clean release:prepare -Prelease $@
+mvnw release:perform -Prelease $@
 
 cd $WD/

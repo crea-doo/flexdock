@@ -9,7 +9,6 @@ SELF=$SD/$SCRIPT
 
 cd $SD/
 
-export MAVEN_OPTS="-Xmx2048m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 mvnw clean install $@
 
 cd $WD/
